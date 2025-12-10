@@ -6,11 +6,11 @@ import inputData from '@data/day-03/input.txt'
 import part1 from '@src/day-03/part-1'
 import part2 from '@src/day-03/part-2'
 
-const splitLines = (input: string) => input.split('\n')
+const prepareData = (input: string) => input.split('\n')
 
 describe('Day 3', () => {
-	const example = splitLines(exampleData)
-	const input = splitLines(inputData)
+	const example = prepareData(exampleData)
+	const input = prepareData(inputData)
 
 	test('example 1', () => {
 		expect(part1(example)).toEqual(357)

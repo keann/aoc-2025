@@ -6,11 +6,11 @@ import inputData from '@data/day-04/input.txt'
 import part1 from '@src/day-04/part-1'
 import part2 from '@src/day-04/part-2'
 
-const parseGrid = (input: string) => input.split('\n').map(line => line.split(''))
+const prepareData = (input: string) => input.split('\n').map(line => line.split(''))
 
 describe('Day 4', () => {
-	const example = parseGrid(exampleData)
-	const input = parseGrid(inputData)
+	const example = prepareData(exampleData)
+	const input = prepareData(inputData)
 
 	test('example 1', () => {
 		expect(part1(example)).toEqual(13)

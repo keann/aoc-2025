@@ -6,11 +6,11 @@ import inputData from '@data/day-01/input.txt'
 import part1 from '@src/day-01/part-1'
 import part2 from '@src/day-01/part-2'
 
-const splitLines = (input: string) => input.split('\n').filter(Boolean)
+const prepareData = (input: string) => input.split('\n').filter(Boolean)
 
 describe('Day 1', () => {
-	const example = splitLines(exampleData)
-	const input = splitLines(inputData)
+	const example = prepareData(exampleData)
+	const input = prepareData(inputData)
 
 	const startPosition = 50
 	const size = 100
